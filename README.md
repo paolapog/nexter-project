@@ -1,0 +1,1 @@
+A simple project purely in CSS (Sass) and CSS grid.

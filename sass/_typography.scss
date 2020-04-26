@@ -4,7 +4,10 @@
 }
 
 .heading-1 {
+    color: $color-grey-light-1;
+    font-size: 4.5rem;
     @extend %heading;
+    line-height: 1;
 }
 
 .heading-2 {

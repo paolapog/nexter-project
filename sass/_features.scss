@@ -1,13 +1,26 @@
 .features {
-    align-items: start;
-    display: grid;
+
     grid-column: center-start / center-end;
-    grid-gap: 6rem;
-    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
     margin: 15rem 0;
+
+    @supports(display: grid) {
+        align-items: start;
+        display: grid;
+        grid-gap: 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    }
 }
 
 .feature {
+    float: left;
+    margin-bottom: 6rem;
+    width: 33.333%;
+
+    @supports(display: grid) {
+        margin-bottom: 0;
+        width: auto;
+    }
+
     display: grid;
     grid-column-gap: 2.5rem;
     grid-row-gap: 1.5rem;
